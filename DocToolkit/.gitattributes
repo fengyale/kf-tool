@@ -1,0 +1,14 @@
+# Windows 批处理必须是 CRLF，否则 cmd 解析不了一些结构（尤其是括号块和标签）。
+*.bat   text eol=crlf
+
+# Python 与文档文件统一 LF
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf
+
+# 这些不是文本，别让 git 做行尾转换
+*.docx  binary
+*.pdf   binary
+*.zip   binary

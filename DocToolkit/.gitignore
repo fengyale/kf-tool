@@ -1,0 +1,34 @@
+# ---------- 本地依赖：第三方二进制包，绝不要进仓库 ----------
+# vendor/libs 是 pip 装进本地的 OCR/PDF 运行时，约 366 MB、近 3000 个文件，
+# 全是第三方编译产物。别人用 requirements.txt 自己装即可。
+vendor/
+
+# ---------- Python 产物 ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---------- 运行输出 ----------
+out/
+*.report.txt
+*.docx
+*.pdf
+*.zip
+
+# ---------- 本项目的素材（含公司内部资料，一律不入库） ----------
+notice_imgs/
+samples/private/
+
+# ---------- 本地配置 ----------
+# python_path.txt 写的是本机 python.exe 的绝对路径，不入库
+python_path.txt
+
+# ---------- 系统垃圾 ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+~$*
