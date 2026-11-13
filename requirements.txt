@@ -1,0 +1,18 @@
+# DocToolkit 运行时依赖
+#
+# 安装：pip install -r requirements.txt
+# 说明：仓库里不包含 vendor/libs（那是本地预装的副本），装好这些包后工具可直接运行。
+# 版本号取的是实测通过的组合（Python 3.12 / Windows）。
+
+# ---- 排版与版权（gongwen.py、add_copyright.py）----
+python-docx>=1.1,<2
+
+# ---- 图片 / PDF 识别（ocr2docx.py）----
+numpy>=1.19.5,<3
+Pillow>=10
+rapidocr-onnxruntime>=1.4,<2      # 自带 onnx 中文识别模型，会连带装 opencv / onnxruntime / shapely
+pymupdf>=1.24,<3                  # PDF 文字层抽取 + 图像版渲染
+
+# 注意：PyMuPDF 是 AGPL-3.0 或 Artifex 商业双许可。
+# 若本项目以宽松许可（MIT / Apache-2.0）发布，需要替换掉 pymupdf 或购买商业授权，
+# 详见 README「许可证」一节。
