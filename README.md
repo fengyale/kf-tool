@@ -5,6 +5,7 @@
 | 工具 | 一句话 | 技术栈 | 入口 | 许可 |
 | --- | --- | --- | --- | --- |
 | [DocToolkit](DocToolkit/) | 中文公文排版 + 图片 / PDF 转 Word 初稿 | Python 3.9+ | `gongwen.bat` / `ocr2docx.bat` / `add_copyright.bat` | AGPL-3.0 |
+| [tw-autosign](tw-autosign/) | 基于 CDP 的浏览器自动化签到工具（TRAE Work / WorkBuddy 每日签到） | Node.js 22+ / PowerShell | `install.ps1` | 未声明 |
 
 ## 使用
 
@@ -28,3 +29,4 @@ Windows 上把 txt、图片文件夹、PDF 或 docx 直接拖到对应的 `.bat`
 | 子项目 | 许可 | 原因 |
 | --- | --- | --- |
 | DocToolkit | AGPL-3.0 | 依赖 PyMuPDF（AGPL-3.0 / 商业双授权），分发组合作品须以 AGPL 发布 |
+| tw-autosign | 未声明 | 子目录内暂未附带 LICENSE 文件 |
